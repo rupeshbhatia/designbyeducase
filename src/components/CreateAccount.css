@@ -58,7 +58,7 @@ input[type="radio"]{
     width: 22px;
 height: 22px;
 background: #6C25FF;
-color: #6C25FF;
+accent-color: #6C25FF; 
 }
 .create-account{
   position: absolute;

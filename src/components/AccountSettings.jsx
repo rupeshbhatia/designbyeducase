@@ -3,6 +3,8 @@ import './AccountSetting.css'
 import img from '../assets/img.png'
 import cam from '../assets/cam.png'
 function AccountSettings() {
+    let user=localStorage.getItem("user");
+    let data=JSON.parse(user)
   return (
     <div>
       <div className="topbar">
@@ -14,8 +16,8 @@ function AccountSettings() {
         <img src={img} alt="proifle-image" />
        </div>
        <div className="profile-txt">
-        <p id="uname">Marry Doe</p>
-        <p id='gmail'>Marry@Gmail.Com</p>
+        <p id="uname">{data.name}</p>
+        <p id='gmail'>{data.email}</p>
        </div>
        <div className='para'>
        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
